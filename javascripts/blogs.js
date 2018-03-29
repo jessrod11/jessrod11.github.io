@@ -1,5 +1,4 @@
-console.log("Stix");
-var blogs = [
+const blogs = [
     {
         id: "blog1",
         title: "Week Two: Command Line, Git, and Github!",
@@ -26,9 +25,9 @@ var blogs = [
     }
 ];
 
-function createBlogPosts(blogArray) {
-    for (var i = 0; i < blogArray.length; i++) {
-        var blogString = '';
+const createBlogPosts = (blogArray) => {
+    for (let i = 0; i < blogArray.length; i++) {
+        let blogString = '';
         blogString += '<div class="blog-styles">';
         blogString += '<h2>' + blogArray[i].title + '</h2>';
         blogString += '<h2>' + blogArray[i].date + '</h2>';
@@ -38,9 +37,8 @@ function createBlogPosts(blogArray) {
     }
 };
 
-function writeToDom(stringToPrint, divId) {
-    var blogDiv = document.getElementById(divId);
-    blogDiv.innerHTML += stringToPrint;
+const writeToDom = (stringToPrint, divId) => {
+    document.getElementById(divId).innerHTML += stringToPrint;
 };
 
 createBlogPosts(blogs);

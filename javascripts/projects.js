@@ -1,6 +1,4 @@
-console.log('Stix');
-
-var projects = [
+const projects = [
     {
         id: "project1",
         title: "Project 1",
@@ -47,9 +45,9 @@ var projects = [
 
 
 
-function createCards(projectArray){
-    for(var i=0; i< projectArray.length; i++){
-        var projectString = '';
+const createCards = (projectArray) => {
+    for(let i=0; i< projectArray.length; i++){
+        let projectString = '';
             projectString += '<div class="project-styles">';
             projectString += '<h2>'+ projectArray[i].title + '</h2>';
             projectString += '<img src= "'+ projectArray[i].imageUrl + '">';
@@ -60,9 +58,8 @@ function createCards(projectArray){
     }
 };
 
-function writeToDom(stringToPrint, divId){
-    var projectDiv = document.getElementById(divId);
-    projectDiv.innerHTML += stringToPrint;
+const writeToDom = (stringToPrint, divId) => {
+    document.getElementById(divId).innerHTML += stringToPrint;
 };
 
 createCards(projects); 
