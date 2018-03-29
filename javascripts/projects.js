@@ -1,49 +1,7 @@
-const projects = [
-    {
-        id: "project1",
-        title: "Project 1",
-        imageUrl: "http://placeimg.com/250/125/tech",
-        description: "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
-        githubUrl: "https://github.com/jessrod11/jessrod11.github.io"
-    },
-    {
-        id: "project2",
-        title: "Project 2",
-        imageUrl: "http://placeimg.com/250/125/tech",
-        description: "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
-        githubUrl: "https://github.com/jessrod11/jessrod11.github.io"
-    },
-    {
-        id: "project3",
-        title: "Project 3",
-        imageUrl: "http://placeimg.com/250/125/tech",
-        description: "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
-        githubUrl: "https://github.com/jessrod11/jessrod11.github.io"
-    },
-    {
-        id: "project4",
-        title: "Project 4",
-        imageUrl: "http://placeimg.com/250/125/tech",
-        description: "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
-        githubUrl: "https://github.com/jessrod11/jessrod11.github.io"
-    },
-    {
-        id: "project5",
-        title: "Project 5",
-        imageUrl: "http://placeimg.com/250/125/tech",
-        description: "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
-        githubUrl: "https://github.com/jessrod11/jessrod11.github.io"
-    },
-    {
-        id: "project6",
-        title: "Project 6",
-        imageUrl: "http://placeimg.com/250/125/tech",
-        description: "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
-        githubUrl: "https://github.com/jessrod11/jessrod11.github.io"
-    }
-];
 
-
+const writeToDom = (stringToPrint, divId) => {
+    document.getElementById(divId).innerHTML += stringToPrint;
+};
 
 const createCards = (projectArray) => {
     for(let i=0; i< projectArray.length; i++){
@@ -58,8 +16,21 @@ const createCards = (projectArray) => {
     }
 };
 
-const writeToDom = (stringToPrint, divId) => {
-    document.getElementById(divId).innerHTML += stringToPrint;
-};
+function executeIfCodeFails() {
+    console.log('What happened, Stix?!');
+}
 
-createCards(projects); 
+function executeWhenPageLoads() {
+    const data = JSON.parse(this.responseText);
+    createCards(data.projects);
+}
+
+startProjectPage = () => {
+    let myRequest = new XMLHttpRequest();
+    myRequest.addEventListener('load', executeWhenPageLoads);
+    myRequest.addEventListener('error', executeIfCodeFails);
+    myRequest.open('GET', '../db/projects.json');
+    myRequest.send();
+}
+
+startProjectPage();
