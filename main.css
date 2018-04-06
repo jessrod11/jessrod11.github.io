@@ -1,7 +1,7 @@
-    * {
+    /* * {
         padding: 0;
         margin: 0;
-    } 
+    }  */
 
     body {
         font-family: 'Kaushan Script', cursive;
@@ -13,17 +13,39 @@
     }
 
     img {
-        width: 50%;
-        height: 50%;
+        margin-left: 29%;
+        width: 34%;
+        height: 34%;
+    }
+
+    #main-container {
+        margin: 7%;
+        padding: 2%;
+        border: 2px solid gray;
+    }
+
+    #top-container {
+        margin: 1%;
+        padding: 3%;
+        border-bottom: 2px solid silver;
+    }
+
+    #footer {
+        
+        padding-top: 6%;
+        border-top: 2px solid silver;
+        text-align: center;
+        color: gray;
     }
 
     /*******************Nav Styling**********************/
     .nav ul {
-        text-align: center;
-        /* border-bottom: 5px double black; */
-        list-style: none;
-        padding-top: 20px;
-        padding-bottom: 20px;
+            text-align: center;
+            color: gray;
+    /* border-bottom: 5px double black; */
+     list-style: none;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 
     .nav li {
