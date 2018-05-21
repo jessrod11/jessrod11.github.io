@@ -31,7 +31,7 @@
     }
 
     #footer {
-        
+
         padding-top: 6%;
         border-top: 2px solid silver;
         text-align: center;
@@ -50,9 +50,9 @@
 
     .nav li {
     color: black;
-    display: inline; 
+    display: inline;
     font-size: 20px;
-    font-family: helvetica; 
+    font-family: helvetica;
     padding-right: 65px;
     text-decoration: none;
     }
@@ -117,8 +117,13 @@ nav a {
     /* border: 2px solid red; */
     margin: 15px 15px;
     padding: 25px;
+
 }
 
 .blog-home {
     padding-top: 15px;
+}
+
+#blog-container {
+    font-size: 25px;
 }
