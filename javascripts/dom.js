@@ -1,11 +1,11 @@
 const projectDom = (projectArray) => {
-  const projectString = '';
+  let projectString = '';
   projectArray.forEach((project) => {
-    projectString += `<div class="project-styles">`;
+    projectString += `<div>`;
     projectString += `<h1 class="title">${project.title}<h1>`;
-    projectString += `<img src=${project.imageUrl}>`;
+    projectString += `<img src= "${project.imageUrl}">`;
     projectString += `<p>${project.description}</p>`;
-    projectString += `<a href=${project.githubUrl}</a>`;
+    projectString += `<a href="${project.githubUrl}">Link to Github Profile</a>`;
     projectString += `</div>`;
   });
   writeToDom('#my-projects', projectString);
