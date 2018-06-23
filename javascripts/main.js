@@ -1,4 +1,15 @@
-const data = require ('./data');
+// const apiKeys = require('./apiKeys');
+// const data = require ('./data');
 
-data.getBlogs();
-data.getProjects();
+// const initializeApp = () => {
+//   apiKeys.retrieveKeys();
+//   firebase.initializeApp();
+//   // data.getBlogs();
+//   data.printProjects();
+// };
+
+// initializeApp();
+
+const events = require ('./events');
+
+events.myLinks();
