@@ -8,7 +8,7 @@ const projectDom = (projectArray) => {
     projectString += `<a href="${project.githubUrl}">Link to Github Profile</a>`;
     projectString += `</div>`;
   });
-  writeToDom('#my-projects', projectString);
+  writeToDom('#projects-container', projectString);
 };
 
 const blogDom = (blogArray) => {

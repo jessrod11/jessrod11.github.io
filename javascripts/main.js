@@ -1,4 +1,9 @@
-const data = require ('./data');
+const {retrieveKeys,} = require('./apiKeys');
+const { eventsInit,} = require('./events');
 
-data.getBlogs();
-data.getProjects();
+const initializeApp = () => {
+  retrieveKeys();
+  eventsInit();
+};
+
+initializeApp();
