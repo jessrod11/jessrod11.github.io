@@ -1,3 +1,6 @@
+const { getProjects,} = require('./firebaseApi');
+const { projectDom,} = require('./dom');
+
 const myLinks = () => {
   $(document).click((e) => {
     if (e.target.id === 'bioLink') {
@@ -8,7 +11,6 @@ const myLinks = () => {
       $('#skills-container').addClass('hide');
       $('#contact-container').addClass('hide');
     } else if (e.target.id === 'projectsLink') {
-      console.log('projects');
       $('#bio-container').addClass('hide');
       $('#resume-container').addClass('hide');
       $('#projects-container').removeClass('hide');
@@ -16,7 +18,6 @@ const myLinks = () => {
       $('#skills-container').addClass('hide');
       $('#contact-container').addClass('hide');
     } else if (e.target.id === 'blogLink') {
-      console.log('blogs');
       $('#bio-container').addClass('hide');
       $('#resume-container').addClass('hide');
       $('#projects-container').addClass('hide');
@@ -24,7 +25,6 @@ const myLinks = () => {
       $('#skills-container').addClass('hide');
       $('#contact-container').addClass('hide');
     } else if (e.target.id === 'techLink') {
-      console.log('skills');
       $('#bio-container').addClass('hide');
       $('#resume-container').addClass('hide');
       $('#projects-container').addClass('hide');
@@ -32,7 +32,6 @@ const myLinks = () => {
       $('#skills-container').removeClass('hide');
       $('#contact-container').addClass('hide');
     } else if (e.target.id === 'contactLink') {
-      console.log('contact');
       $('#bio-container').addClass('hide');
       $('#resume-container').addClass('hide');
       $('#projects-container').addClass('hide');
@@ -40,7 +39,6 @@ const myLinks = () => {
       $('#skills-container').addClass('hide');
       $('#contact-container').removeClass('hide');
     } else if (e.target.id === 'resumeLink') {
-      console.log('resume');
       $('#bio-container').addClass('hide');
       $('#resume-container').removeClass('hide');
       $('#projects-container').addClass('hide');
@@ -58,6 +56,24 @@ const myLinks = () => {
   });
 };
 
+const getProjectsEvent = () => {
+  $(document).on('click', '#projectsLink', (e) => {
+    getProjects()
+      .then((projectsArray) => {
+        console.log(projectsArray);
+        projectDom(projectsArray);
+      })
+      .catch((error) => {
+        console.log('error in getProjectPromise', error);
+      });
+  });
+};
+
+const eventsInit = () => {
+  myLinks();
+  getProjectsEvent();
+};
+
 module.exports = {
-  myLinks,
+  eventsInit,
 };

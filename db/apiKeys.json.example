@@ -1,5 +1,4 @@
   {
-    "apiKeys": {
       "firebase": {
         "apiKey": "",
         "authDomain": "",
@@ -8,5 +7,4 @@
         "storageBucket": "",
         "messagingSenderId": ""
       }
-    }
   }

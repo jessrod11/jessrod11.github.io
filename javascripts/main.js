@@ -1,15 +1,12 @@
-// const apiKeys = require('./apiKeys');
+const {retrieveKeys,} = require('./apiKeys');
 // const data = require ('./data');
+const { eventsInit,} = require('./events');
 
-// const initializeApp = () => {
-//   apiKeys.retrieveKeys();
-//   firebase.initializeApp();
-//   // data.getBlogs();
-//   data.printProjects();
-// };
+const initializeApp = () => {
+  retrieveKeys();
+  eventsInit();
+  // data.getBlogs();
+  // data.printProjects();
+};
 
-// initializeApp();
-
-const events = require ('./events');
-
-events.myLinks();
+initializeApp();
