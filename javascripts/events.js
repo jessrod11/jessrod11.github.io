@@ -1,5 +1,5 @@
-const { getProjects,} = require('./firebaseApi');
-const { projectDom,} = require('./dom');
+const { getProjects, getBlogs,} = require('./firebaseApi');
+const { projectDom, blogDom,} = require('./dom');
 
 const myLinks = () => {
   $(document).click((e) => {
@@ -60,7 +60,6 @@ const getProjectsEvent = () => {
   $(document).on('click', '#projectsLink', (e) => {
     getProjects()
       .then((projectsArray) => {
-        console.log(projectsArray);
         projectDom(projectsArray);
       })
       .catch((error) => {
@@ -69,9 +68,22 @@ const getProjectsEvent = () => {
   });
 };
 
+const getBlogsEvent = () => {
+  $(document).on('click', '#blogLink', (e) => {
+    getBlogs()
+      .then((blogsArray) => {
+        blogDom(blogsArray);
+      })
+      .catch((error) => {
+        console.log('error in getBlogsPromise', error);
+      });
+  });
+};
+
 const eventsInit = () => {
   myLinks();
   getProjectsEvent();
+  getBlogsEvent();
 };
 
 module.exports = {

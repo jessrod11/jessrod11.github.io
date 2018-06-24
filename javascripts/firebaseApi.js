@@ -26,7 +26,30 @@ const getProjects = () => {
   });
 };
 
+const getBlogs = () => {
+  return new Promise ((resolve, reject) => {
+    const allBlogsArray = [];
+    $.ajax({
+      method: 'GET',
+      url: `${firebaseConfig.firebase.databaseURL}/blogs/blogs.json`,
+    })
+      .done((allBlogsObj) => {
+        if (allBlogsObj !== null) {
+          Object.keys(allBlogsObj).forEach((fbKey) => {
+            allBlogsObj[fbKey].id = fbKey;
+            allBlogsArray.push(allBlogsObj[fbKey]);
+          });
+        }
+        resolve(allBlogsArray);
+      })
+      .fail((error) => {
+        reject(error);
+      });
+  });
+};
+
 module.exports = {
   setConfig,
   getProjects,
+  getBlogs,
 };

@@ -11,17 +11,17 @@ const projectDom = (projectArray) => {
   writeToDom('#projects-container', projectString);
 };
 
-// const blogDom = (blogArray) => {
-//   let blogString = '';
-//   blogArray.forEach((blog) => {
-//     blogString += `<div class="blog-styles">`;
-//     blogString += `<h2>${blog.title}</h2>`;
-//     blogString += `<h2>${blog.date}</h2>`;
-//     blogString += `<p>${blog.post}</p>`;
-//     blogString += `</div>`;
-//   });
-//   writeToDom('#blog-container', blogString);
-// };
+const blogDom = (blogArray) => {
+  let blogString = '';
+  blogArray.forEach((blog) => {
+    blogString += `<div class="blog-styles">`;
+    blogString += `<h2>${blog.title}</h2>`;
+    blogString += `<h2>${blog.date}</h2>`;
+    blogString += `<p>${blog.post}</p>`;
+    blogString += `</div>`;
+  });
+  writeToDom('#blog-container', blogString);
+};
 
 const writeToDom = (id, string) => {
   $(id).html(string);
@@ -29,5 +29,5 @@ const writeToDom = (id, string) => {
 
 module.exports = {
   projectDom,
-  // blogDom,
+  blogDom,
 };
