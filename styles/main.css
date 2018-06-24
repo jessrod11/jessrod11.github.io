@@ -1,3 +1,8 @@
+    * {
+    padding: 0;
+    margin: 0;
+    }
+
     body {
     font-family: 'Kaushan Script', cursive;
     background-image: url('https://images.unsplash.com/photo-1517059224940-d4af9eec41b7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=138da2df65dd01d6715a76b5ac1b9441&auto=format&fit=crop&w=1167&q=80');
@@ -28,7 +33,7 @@
 
     #resume-container {
     font-family: 'Kaushan Script', cursive;
-    background-image: url('https://images.unsplash.com/photo-1520588831435-1529e6d7cf5e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fd3d7c35892bd8c7c9e757865a764d4c&auto=format&fit=crop&w=984&q=80');
+    background-image: url('https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-0.3.5&s=2d5a29bf54756acf6d32c46cdf60a63d&auto=format&fit=crop&w=1050&q=80');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,7 +42,7 @@
 
     #projects-container {
     font-family: 'Kaushan Script', cursive;
-    background-image: url('https://images.unsplash.com/photo-1517059224940-d4af9eec41b7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=138da2df65dd01d6715a76b5ac1b9441&auto=format&fit=crop&w=1167&q=80');
+    background-image: url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2059a86937844c84267d5126e5b36aa3&auto=format&fit=crop&w=1050&q=80');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,7 +60,7 @@
 
     #skills-container {
     font-family: 'Kaushan Script', cursive;
-    background-image: url('https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-0.3.5&s=2d5a29bf54756acf6d32c46cdf60a63d&auto=format&fit=crop&w=1050&q=80');
+    background-image: url('https://images.unsplash.com/photo-1518932945647-7a1c969f8be2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fc333d777f5e10a2749427edc83e6c46&auto=format&fit=crop&w=1489&q=80');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -64,7 +69,7 @@
 
     #contact-container {
     font-family: 'Kaushan Script', cursive;
-    background-image: url('https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fbaf57cfb9374309ad3153a5d27b7c78&auto=format&fit=crop&w=800&q=80');
+    background-image: url('https://images.unsplash.com/photo-1517059224940-d4af9eec41b7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=138da2df65dd01d6715a76b5ac1b9441&auto=format&fit=crop&w=1167&q=80');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
