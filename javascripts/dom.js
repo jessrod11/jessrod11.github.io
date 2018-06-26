@@ -18,10 +18,14 @@ const projectDom = (projectArray) => {
 const blogDom = (blogArray) => {
   let blogString = '';
   blogArray.forEach((blog) => {
-    blogString += `<div class="blog-styles">`;
+    blogString += `<div class="col-sm-6 col-md-4 shorten-text">`;
+    blogString += `<div class="thumbnail">`;
+    blogString += `<h2 class="text-center">${blog.date}</h2>`;
+    blogString += `<div class="caption">`;
     blogString += `<h2>${blog.title}</h2>`;
-    blogString += `<h2>${blog.date}</h2>`;
     blogString += `<p>${blog.post}</p>`;
+    blogString += `</div>`;
+    blogString += `</div>`;
     blogString += `</div>`;
   });
   writeToDom('#blog-container', blogString);

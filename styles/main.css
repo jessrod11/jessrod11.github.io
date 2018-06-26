@@ -70,6 +70,13 @@
     height: 100vh;
     }
 
+    .shorten-text {
+     width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+
     /*******************Nav Styling**********************/
 
 .navbar{
