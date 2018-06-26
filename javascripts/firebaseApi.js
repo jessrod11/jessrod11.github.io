@@ -9,7 +9,7 @@ const getProjects = () => {
     const allProjectsArray = [];
     $.ajax({
       method: 'GET',
-      url: `${firebaseConfig.firebase.databaseURL}/projects.json`,
+      url: `${firebaseConfig.firebase.databaseURL}/projects/projects.json`,
     })
       .done((allProjectsObj) => {
         if (allProjectsObj !== null) {
