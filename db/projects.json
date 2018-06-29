@@ -1,46 +1,31 @@
 {
-    "projects": [
-        {
-            "id": "project1",
-            "title": "Project 1",
-            "imageUrl": "http://placeimg.com/250/125/tech",
-            "description": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
-            "githubUrl": "https://github.com/jessrod11/jessrod11.github.io"
+    "projects": {
+        "project1": {
+            "title": "Local Weather",
+            "imageUrl": "https://raw.githubusercontent.com/jessrod11/local-weather/master/img/fiveSearch.png",
+            "description": "This Super Mario Themed local weather applicaton allows you to search for your local weather for the current day and can search for a five day forecast by calling the Open Weather Api. Using the CURD operations you are also able to save forecasts, delete forecasts, sign into the application and mark scary forecasts with a red background. ",
+            "technologiesUsed": "HTML, CSS, JS, Jquery, Browserify, Boostrap, Grunt, Ajax, and Firebase",
+            "available": true,
+            "url": "https://jr-localweather.firebaseapp.com/",
+            "githubUrl": "https://github.com/jessrod11/local-weather"
         },
-        {
-            "id": "project2",
-            "title": "Project 2",
-            "imageUrl": "http://placeimg.com/250/125/tech",
-            "description": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
-            "githubUrl": "https://github.com/jessrod11/jessrod11.github.io"
+        "project2": {
+            "title": "Local Weather",
+            "imageUrl": "https://raw.githubusercontent.com/jessrod11/local-weather/master/img/fiveSearch.png",
+            "description": "This Super Mario Themed local weather applicaton allows you to search for your local weather for the current day and can search for a five day forecast by calling the Open Weather Api. Using the CURD operations you are also able to save forecasts, delete forecasts, sign into the application and mark scary forecasts with a red background. ",
+            "technologiesUsed": "HTML, CSS, JS, Jquery, Browserify, Boostrap, Grunt, Ajax, and Firebase",
+            "available": true,
+            "url": "https://jr-localweather.firebaseapp.com/",
+            "githubUrl": "https://github.com/jessrod11/local-weather"
         },
-        {
-            "id": "project3",
-            "title": "Project 3",
-            "imageUrl": "http://placeimg.com/250/125/tech",
-            "description": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
-            "githubUrl": "https://github.com/jessrod11/jessrod11.github.io"
-        },
-        {
-            "id": "project4",
-            "title": "Project 4",
-            "imageUrl": "http://placeimg.com/250/125/tech",
-            "description": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
-            "githubUrl": "https://github.com/jessrod11/jessrod11.github.io"
-        },
-        {
-            "id": "project5",
-            "title": "Project 5",
-            "imageUrl": "http://placeimg.com/250/125/tech",
-            "description": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
-            "githubUrl": "https://github.com/jessrod11/jessrod11.github.io"
-        },
-        {
-            "id": "project6",
-            "title": "Project 6",
-            "imageUrl": "http://placeimg.com/250/125/tech",
-            "description": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
-            "githubUrl": "https://github.com/jessrod11/jessrod11.github.io"
+        "project3": {
+            "title": "Local Weather",
+            "imageUrl": "https://raw.githubusercontent.com/jessrod11/local-weather/master/img/fiveSearch.png",
+            "description": "This Super Mario Themed local weather applicaton allows you to search for your local weather for the current day and can search for a five day forecast by calling the Open Weather Api. Using the CURD operations you are also able to save forecasts, delete forecasts, sign into the application and mark scary forecasts with a red background. ",
+            "technologiesUsed": "HTML, CSS, JS, Jquery, Browserify, Boostrap, Grunt, Ajax, and Firebase",
+            "available": true,
+            "url": "https://jr-localweather.firebaseapp.com/",
+            "githubUrl": "https://github.com/jessrod11/local-weather"
         }
-    ]
+    }
 }
