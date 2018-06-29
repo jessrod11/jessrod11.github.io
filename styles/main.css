@@ -22,7 +22,7 @@
         height: 34%;
     } */
 
-    #bio-container {
+    #bio-container,  #contact-container {
     background-image: url('https://images.unsplash.com/photo-1518600654093-2a24cddafa38?ixlib=rb-0.3.5&s=d89da5b98e50f66dd07e935336655199&auto=format&fit=crop&w=1117&q=80');
     background-position: center;
     background-repeat: no-repeat;
@@ -30,51 +30,12 @@
     height: 100vh;
     }
 
-    #resume-container {
+    #resume-container,  #projects-container, #blog-container,  #skills-container   {
     background-image: url('https://images.unsplash.com/photo-1518600654093-2a24cddafa38?ixlib=rb-0.3.5&s=d89da5b98e50f66dd07e935336655199&auto=format&fit=crop&w=1117&q=80');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    }
-
-    #projects-container {
-    background-image: url('https://images.unsplash.com/photo-1518600654093-2a24cddafa38?ixlib=rb-0.3.5&s=d89da5b98e50f66dd07e935336655199&auto=format&fit=crop&w=1117&q=80');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    }
-
-    #blog-container {
-    background-image: url('https://images.unsplash.com/photo-1518600654093-2a24cddafa38?ixlib=rb-0.3.5&s=d89da5b98e50f66dd07e935336655199&auto=format&fit=crop&w=1117&q=80');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    }
-
-    #skills-container {
-    background-image: url('https://images.unsplash.com/photo-1518600654093-2a24cddafa38?ixlib=rb-0.3.5&s=d89da5b98e50f66dd07e935336655199&auto=format&fit=crop&w=1117&q=80');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    }
-
-    #contact-container {
-    background-image: url('https://images.unsplash.com/photo-1517059224940-d4af9eec41b7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=138da2df65dd01d6715a76b5ac1b9441&auto=format&fit=crop&w=1167&q=80');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    }
-
-    .shorten-text {
-     width: 100px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     }
 
     /*******************Nav Styling**********************/
