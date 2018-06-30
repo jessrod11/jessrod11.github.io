@@ -6,66 +6,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home || Jessica D. Rodgers</title>
     <link rel="shortcut icon" href="">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
         <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
 </head>
 
 <body>
-    <!-- NAV BAR -->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                    aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" id="homeLink">Jessica D. Rodgers</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a id="bioLink">About</a>
-                    </li>
-                    <li>
-                        <a class="" id="resumeLink">Experience</a>
-                    </li>
-                    <li>
-                        <a class="" id="projectsLink">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="" id="blogLink">Blogs</a>
-                    </li>
-                    <li>
-                        <a class="" id="techLink">Skills</a>
-                    </li>
-                    <li>
-                        <a class="" id="contactLink">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
 
-    <div id="wrapper-div">
+<nav>
+    <div class="nav-wrapper">
+        <a href="#!" class="brand-logo" id="homeLink">Jessica D. Rodgers | Software Developer</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+            <li>
+                <a id="bioLink">About</a>
+            </li>
+            <li>
+                <a id="resumeLink">Experience</a>
+            </li>
+            <li>
+                <a id="projectsLink">Portfolio</a>
+            </li>
+            <li>
+                <a id="blogLink">Blog</a>
+            </li>
+            <li>
+                <a id="techLink">Skills</a>
+            </li>
+            <li>
+                <a id="contactLink">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+    <li>
+        <a id="bioLink">About</a>
+    </li>
+    <li>
+        <a id="resumeLink">Experience</a>
+    </li>
+    <li>
+        <a id="projectsLink">Portfolio</a>
+    </li>
+    <li>
+        <a id="blogLink">Blog</a>
+    </li>
+    <li>
+        <a id="techLink">Skills</a>
+    </li>
+    <li>
+        <a id="contactLink">Contact</a>
+    </li>
+</ul>
+
+    <div class="container">
     <!-- HOME SCREEN -->
 
     <!-- About/Bio Div -->
         <div class="hide" id="bio-container">
-            <h1>My Bio will go here!</h1>
+            <h1>Hello World!</h1>
+            <div class="divider"></div>
+
+            <div class="col s12 m7 bio-styles">
+                <div class="card horizontal teal">
+                    <div class="card-image">
+                        <img src="https://render.bitstrips.com/v2/cpanel/fb695398-7ef1-4461-987b-73d3a97805fd-23acb198-604b-4428-a1ad-0990c0396798-v1.png?transparent=1&palette=1">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <p class="flow-text white-text">My name is Jessica Rodgers and I am originally from Memphis, Tn. I was introduced to code accidentally while trying to design
+                            the best MySpace page that I could think of. Unfortunately, I didn't continue on my quest of all things code. It wasn't until
+                            years later, after discovering that I wasn't happy in the world Exercise Science, that I began my quest of coding again.
+                            I taught myself what I could on Team Treehouse and then discovered Nashville Software School. I've gained a wealth of knowledge
+                            while I attending this coding bootcamp and am excited to continue my journey as a full stack web developer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <!-- Experience/Resume Div -->
         <div class="hide" id="resume-container">
+            <h1>My Professional History</h1>
+            <div class="divider"></div>
             <h1>My Professional History will go here!</h1>
         </div>
 
@@ -77,20 +109,28 @@
 
         <!-- Skills Div -->
         <div class="hide" id="skills-container">
+            <h1>My Skills</h1>
+            <div class="divider"></div>
             <h1>The Technologies I've Learned will go here!</h1>
         </div>
 
         <!-- Contact Div -->
         <div class="hide" id="contact-container">
-            <h1>Contact Information will be loaded on the screen!</h1>
+            <h1>Contact Me!</h1>
+            <div class="divider"></div>
+            <div class="contact-styles center">
+                <button class="btn btn-large"><i class="fab fa-github left"></i>Github</button>
+                <button class="btn btn-large"><i class="fas fa-envelope left"></i>Email</button>
+                <button class="btn btn-large"><i class="fab fa-twitter-square left"></i>Twitter</button>
+                <button class="btn btn-large"><i class="fab fa-linkedin-in left"></i>Linked In</button>
+            </div>
         </div>
     </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
     <script src="dist/app.js"></script>
 </body>

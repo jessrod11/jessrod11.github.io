@@ -1,6 +1,14 @@
 const { getProjects, getBlogs,} = require('./firebaseApi');
 const { projectDom, blogDom,} = require('./dom');
 
+$(document).ready(function () {
+  $('.sidenav').sidenav();
+});
+
+$(document).ready(function () {
+  $('.carousel').carousel();
+});
+
 const myLinks = () => {
   $(document).click((e) => {
     if (e.target.id === 'bioLink') {

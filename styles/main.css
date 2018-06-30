@@ -17,90 +17,26 @@
         margin-top: 25px;
     }
 
-    /* img {
-        width: 34%;
-        height: 34%;
-    } */
 
-    #bio-container,  #contact-container {
-    background-image: url('https://images.unsplash.com/photo-1518600654093-2a24cddafa38?ixlib=rb-0.3.5&s=d89da5b98e50f66dd07e935336655199&auto=format&fit=crop&w=1117&q=80');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+    /*******************Bio Styling**********************/
+.bio-styles{
+        margin-top: 81px;
     }
 
-    #resume-container,  #projects-container, #blog-container,  #skills-container   {
-    background-image: url('https://images.unsplash.com/photo-1518600654093-2a24cddafa38?ixlib=rb-0.3.5&s=d89da5b98e50f66dd07e935336655199&auto=format&fit=crop&w=1117&q=80');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    }
-
-    /*******************Nav Styling**********************/
-
-.navbar{
-  background-color: black;
-}
-
-.navbar-default {
-  border-color: black;
-}
 
 /******************* Contact Styling **********************/
 
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
+.contact-styles {
+    margin-top: 50px;
 }
 
-.fa:hover {
-    opacity: 0.7;
-}
-
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
 
 
 /*******************Project Styling**********************/
 .project-styles {
     /* border: 2px solid red; */
-    margin: 50px;
-    padding: 20px;
+    margin-top: 100px;
 }
 
-/*******************Blog Styling**********************/
-.blog-styles {
-    /* border: 2px solid red; */
-    margin: 15px 15px;
-    padding: 25px;
+/******************* Styling**********************/
 
-}
-
-.blog-home {
-    padding-top: 15px;
-}
-
-#blog-container {
-    font-size: 25px;
-}
