@@ -14,9 +14,17 @@
     flex: 1 0 auto;
   }
 
-.desktop-img {
-    height: 10vh;
- }
+.parallax-container {
+    height: 800px;
+}
+
+img {
+     height: auto;
+    max-width: 100%;
+}
+.tech-img {
+    height: 92px;
+}
     /*******************Bio Styling**********************/
 .bio-styles{
         margin-top: 81px;
