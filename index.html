@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home || Jessica D. Rodgers</title>
     <link rel="shortcut icon" href="">
+    <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
@@ -17,62 +18,166 @@
 
 <body>
 
-<nav>
-    <div class="nav-wrapper">
-        <a href="#!" class="brand-logo" id="homeLink">Jessica D. Rodgers | Software Developer</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-            <i class="material-icons">menu</i>
-        </a>
-        <ul class="right hide-on-med-and-down">
-            <li>
-                <a id="bioLink">About</a>
-            </li>
-            <li>
-                <a id="resumeLink">Experience</a>
-            </li>
-            <li>
-                <a id="projectsLink">Portfolio</a>
-            </li>
-            <li>
-                <a id="blogLink">Blog</a>
-            </li>
-            <li>
-                <a id="techLink">Skills</a>
-            </li>
-            <li>
-                <a id="contactLink">Contact</a>
-            </li>
-        </ul>
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo waves-effect waves-light" id="homeLink">Jessica D. Rodgers</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a class="waves-effect waves-light" href="#about" id="bioLink" >About</a>
+                </li>
+                 <li>
+                     <a class="waves-effect waves-light" href="#blog" id="blogLink">Blog</a>
+                </li>
+                <li>
+                    <a class="waves-effect waves-light" href="#projects" id="projectsLink">Portfolio</a>
+                </li>
+                <li>
+                    <a class="waves-effect waves-light" href="#skills" id="techLink">Skills</a>
+                </li>
+                <li>
+                    <a class="waves-effect waves-light" href="#" id="resumeLink">Experience</a>
+                </li>
+                <li>
+                    <a class="waves-effect waves-light" href="#contactMe" id="contactLink">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     </div>
-</nav>
+
 
 <ul class="sidenav" id="mobile-demo">
     <li>
-        <a id="bioLink">About</a>
+        <a class="waves-effect waves-teal" id="bioLink">About</a>
+        <div class="divider"></div>
     </li>
     <li>
-        <a id="resumeLink">Experience</a>
+        <a class="waves-effect waves-teal" id="resumeLink">Experience</a>
+        <div class="divider"></div>
     </li>
     <li>
-        <a id="projectsLink">Portfolio</a>
+        <a class="waves-effect waves-teal" id="projectsLink">Portfolio</a>
+        <div class="divider"></div>
     </li>
     <li>
-        <a id="blogLink">Blog</a>
+        <a class="waves-effect waves-teal"id="blogLink">Blog</a>
+        <div class="divider"></div>
     </li>
     <li>
-        <a id="techLink">Skills</a>
+        <a class="waves-effect waves-teal" id="techLink">Skills</a>
+        <div class="divider"></div>
     </li>
     <li>
-        <a id="contactLink">Contact</a>
+        <a class="waves-effect waves-teal" id="contactLink">Contact</a>
+        <div class="divider"></div>
     </li>
 </ul>
 
-    <div class="container">
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img  class="desktop-img"src="https://images.unsplash.com/photo-1517059224940-d4af9eec41b7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=138da2df65dd01d6715a76b5ac1b9441&auto=format&fit=crop&w=1167&q=80">
+        </div>
+    </div>
+    <div class="section white scrollspy center" id="about">
+        <div class="row container">
+            <h2 class="header">Hello World!</h2>
+            <div class="divider"></div>
+            <!-- <img src="https://render.bitstrips.com/v2/cpanel/fb695398-7ef1-4461-987b-73d3a97805fd-23acb198-604b-4428-a1ad-0990c0396798-v1.png?transparent=1&palette=1"> -->
+            <p class="grey-text text-darken-3 lighten-3">My name is Jessica Rodgers and I am originally from Memphis, Tn. I was introduced to code accidentally while trying to design
+            the best MySpace page that I could think of. Unfortunately, I didn't continue on my quest of all things code. It wasn't until
+            years later, after discovering that I wasn't happy in the world Exercise Science, that I began my quest of coding again.
+            I taught myself what I could on Team Treehouse and then discovered Nashville Software School. I've gained a wealth of knowledge
+            while I attending this coding bootcamp and am excited to continue my journey as a full stack web developer.</p>
+            <button class="btn-large teal waves-effect waves-light">Learn More</button>
+        </div>
+    </div>
+    <div class="parallax-container scrollspy">
+        <div class="parallax">
+            <img src="https://images.unsplash.com/photo-1508984772106-f2a17812774c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=93856a05a339a0f42a71d2c26480085d&auto=format&fit=crop&w=1050&q=80">
+        </div>
+    </div>
+        <div class="section white scrollspy" id="blog">
+            <div class="row container">
+                <h2 class="header center">My Blog</h2>
+                <div class="divider"></div>
+
+                <h6 class="grey-text text-darken-3 lighten-3">02/27/2018 by Stix Rodgers</h6>
+                <h4>Command Line, Git, and Github</h4>
+                <p class="grey-text text-darken-3 lighten-3">The Command Line: This week we focused on the command line and git! While I felt pretty comfortable with both topics from
+                my practice in E6, I found the refresher helpful.I’ve always been able to follow the steps to properly create a repository,
+                push code to Github, and pull down to master.I never took the time to focus on what the command line and git are, how they
+                came into existence, and why they are important.With the new lecture format, I was able to learn those things and appreciate
+                the process even more...</p>
+                <a class="">Continue Reading</a>
+
+                <h6>03/06/18 by Stix Rodgers</h6>
+                <h4 class="grey-text text-darken-3 lighten-3">Strings, Arrays, Objects</h4>
+                <p class="grey-text text-darken-3 lighten-3">This week was all about the basics of Javascript and boy did it start off great! “Really, Stix?! Great?” I mean… Yeah! I
+                already know the basics of Javascript so my expectation was to sit back and enjoy the refresher… or so I thought. The lecture
+                began with the history of Javascript, which was pretty cool. I remembered reading some of those things in the “You don’t
+                know JS” book, I think… or somewhere online. I didn’t remember learning that Javascript was created in two weeks. I don’t
+                know why, but I found that fact quite interesting...</p>
+                <a class="">Continue Reading</a>
+
+                <h6>03/13/2018 by Stix Rodgers</h6>
+                <h4 class="grey-text text-darken-3 lighten-3">JS Advanced Array Methods and Git Teams</h4>
+                <p class="grey-text text-darken-3 lighten-3">Remember how I talked about Advanced Array Methods last week? Well apparently I talked about them a little early because
+                I’m to mention them in this blog. I mean… if I’m being honest, I don’t wannnnnnna, lol, but there are things that I’ve learned
+                and I know that these will be my best friends if I just give them a chance. So here we go! Advanced Array Methods. *wipes
+                away tear from right eye* lol I’m dramatic, sorry. Our pretty awesome instructors knew... </p>
+                <a class="">Continue Reading</a>
+            </div>
+        </div>
+            <div class="parallax-container scrollspy">
+                <div class="parallax">
+                    <img src="https://images.unsplash.com/photo-1508984772106-f2a17812774c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=93856a05a339a0f42a71d2c26480085d&auto=format&fit=crop&w=1050&q=80">
+                </div>
+            </div>
+                <div class="section white scrollspy center" id="projects">
+                    <div class="row container">
+                        <h2 class="header center">My Projects</h2>
+                        <div class="divider"></div>
+                        <!-- <img src="https://render.bitstrips.com/v2/cpanel/fb695398-7ef1-4461-987b-73d3a97805fd-23acb198-604b-4428-a1ad-0990c0396798-v1.png?transparent=1&palette=1"> -->
+                        <p class="grey-text text-darken-3 lighten-3">My name is Jessica Rodgers and I am originally from Memphis, Tn. I was introduced to code accidentally while trying
+                            to design the best MySpace page that I could think of. Unfortunately, I didn't continue on my quest of all things
+                            code. It wasn't until years later, after discovering that I wasn't happy in the world Exercise Science, that
+                            I began my quest of coding again. I taught myself what I could on Team Treehouse and then discovered Nashville
+                            Software School. I've gained a wealth of knowledge while I attending this coding bootcamp and am excited to continue
+                            my journey as a full stack web developer.</p>
+                        <button class="btn-large teal waves-effect waves-light">Learn More</button>
+                    </div>
+                </div>
+            <div class="parallax-container scrollspy">
+                <div class="parallax">
+                    <img src="https://images.unsplash.com/photo-1508984772106-f2a17812774c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=93856a05a339a0f42a71d2c26480085d&auto=format&fit=crop&w=1050&q=80">
+                </div>
+            </div>
+                <div class="section white scrollspy center">
+                    <div class="row container">
+                        <h2 class="header center" id="skills">My Skills</h2>
+                        <div class="divider"></div>
+                        <!-- <img src="https://render.bitstrips.com/v2/cpanel/fb695398-7ef1-4461-987b-73d3a97805fd-23acb198-604b-4428-a1ad-0990c0396798-v1.png?transparent=1&palette=1"> -->
+                        <p class="grey-text text-darken-3 lighten-3">My name is Jessica Rodgers and I am originally from Memphis, Tn. I was introduced to code accidentally while trying
+                            to design the best MySpace page that I could think of. Unfortunately, I didn't continue on my quest of all things
+                            code. It wasn't until years later, after discovering that I wasn't happy in the world Exercise Science, that
+                            I began my quest of coding again. I taught myself what I could on Team Treehouse and then discovered Nashville
+                            Software School. I've gained a wealth of knowledge while I attending this coding bootcamp and am excited to continue
+                            my journey as a full stack web developer.</p>
+                        <button class="btn-large teal waves-effect waves-light">Learn More</button>
+                    </div>
+                </div>
+
+    <!-- <div class="container"> -->
     <!-- HOME SCREEN -->
 
-    <!-- About/Bio Div -->
-        <div class="hide" id="bio-container">
-            <h1>Hello World!</h1>
+<!-- About/Bio Div
+      <div class="hide" id="bio-container">
+            <h1 class="header">Hello World!</h1>
             <div class="divider"></div>
 
             <div class="col s12 m7 bio-styles">
@@ -87,35 +192,36 @@
                             years later, after discovering that I wasn't happy in the world Exercise Science, that I began my quest of coding again.
                             I taught myself what I could on Team Treehouse and then discovered Nashville Software School. I've gained a wealth of knowledge
                             while I attending this coding bootcamp and am excited to continue my journey as a full stack web developer.</p>
+                            <button>Learn More</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-        </div>
+        </div> -->
 
         <!-- Experience/Resume Div -->
-        <div class="hide" id="resume-container">
+        <!-- <div class="hide" id="resume-container">
             <h1>My Professional History</h1>
             <div class="divider"></div>
             <h1>My Professional History will go here!</h1>
-        </div>
+        </div> -->
 
         <!-- Portfolio Div -->
-        <div class="hide" id="projects-container"></div>
+        <!-- <div class="hide" id="projects-container"></div> -->
 
         <!-- Blog Div -->
-        <div class="hide" id="blog-container"></div>
+        <!-- <div class="hide" id="blog-container"></div> -->
 
         <!-- Skills Div -->
-        <div class="hide" id="skills-container">
+        <!-- <div class="hide" id="skills-container">
             <h1>My Skills</h1>
             <div class="divider"></div>
             <h1>The Technologies I've Learned will go here!</h1>
-        </div>
+        </div> -->
 
         <!-- Contact Div -->
-        <div class="hide" id="contact-container">
+        <!-- <div class="hide" id="contact-container">
             <h1>Contact Me!</h1>
             <div class="divider"></div>
             <div class="contact-styles center">
@@ -125,8 +231,42 @@
                 <button class="btn btn-large"><i class="fab fa-linkedin-in left"></i>Linked In</button>
             </div>
         </div>
-    </div>
+    </div> -->
 
+            <footer class="page-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class=" s12 m4 l8">
+                            <h5 class="white-text center">Contact Me!</h5>
+                            <div class="divider"></div>
+                            <p class="grey-text text-lighten-4 center">You can use rows and columns here to organize your footer content.</p>
+                        </div>
+                        <div class=" col s12 m4 l8">
+                            <h5 class="white-text">Links</h5>
+                            <ul>
+                                <li>
+                                    <a class="grey-text text-lighten-3" href="#!"><i class="devicons devicons-javascript"></i></a>
+                                </li>
+                                <li>
+                                    <a class="grey-text text-lighten-3" href="#!">Link 2</a>
+                                </li>
+                                <li>
+                                    <a class="grey-text text-lighten-3" href="#!">Link 3</a>
+                                </li>
+                                <li>
+                                    <a class="grey-text text-lighten-3" href="#!">Link 4</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                        © 2018 Copyright| Jessica D. Rodgers
+                        <a class="grey-text text-lighten-4 right" d="contactMe" href="#!">More Links</a>
+                    </div>
+                </div>
+            </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>

@@ -3,10 +3,8 @@ const { projectDom, blogDom,} = require('./dom');
 
 $(document).ready(function () {
   $('.sidenav').sidenav();
-});
-
-$(document).ready(function () {
-  $('.carousel').carousel();
+  $('.parallax').parallax();
+  $('.scrollspy').scrollSpy();
 });
 
 const myLinks = () => {
