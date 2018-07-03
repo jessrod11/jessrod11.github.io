@@ -1,6 +1,6 @@
 const projectDom = (projectArray) => {
   let projectString = '';
-  projectString += `<h1>My Projects</h1>`;
+  projectString += `<h1 class="center">My Projects</h1>`;
   projectString += `<div class="divider"></div>`;
   projectArray.forEach((project) => {
     projectString += `<div class="row project-styles">`;
