@@ -32,6 +32,7 @@ const blogDom = (blogArray) => {
     // blogString += `<div class="card-image waves-effect waves-block waves-light">`;
     // blogString += `</div>`;
     // blogString += `<div class="card-content">`;
+    blogString += `<p>${blog.date}</p>`;
     blogString += `<p>${blog.title}</p>`;
     // blogString += `<i class="material-icons right">more_vert</i>`;
     // blogString += `</span>`;

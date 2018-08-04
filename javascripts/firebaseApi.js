@@ -1,3 +1,4 @@
+const { projectDom, blogDom, } = require('./dom');
 let firebaseConfig = {};
 
 const setConfig = (fbConfig) => {
@@ -48,8 +49,28 @@ const getBlogs = () => {
   });
 };
 
+const getProjectsEvent = () => {
+  getProjects()
+    .then((projectsArray) => {
+      projectDom(projectsArray);
+    })
+    .catch((error) => {
+      console.log('error in getProjectPromise', error);
+    });
+};
+
+const getBlogsEvent = () => {
+  getBlogs()
+    .then((blogsArray) => {
+      blogDom(blogsArray);
+    })
+    .catch((error) => {
+      console.log('error in getBlogsPromise', error);
+    });
+};
+
 module.exports = {
   setConfig,
-  getProjects,
-  getBlogs,
+  getProjectsEvent,
+  getBlogsEvent,
 };
