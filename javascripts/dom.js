@@ -5,7 +5,7 @@ const projectDom = (projectArray) => {
   projectArray.forEach((project) => {
     projectString += `<div class="row project-styles">`;
     projectString += `<div class="col s4 z-depth-5">`;
-    projectString += `<div class="card">`;
+    projectString += `<div class="card col-project">`;
     projectString += `<div class="card-image">`;
     projectString += `<img src= "${project.imageUrl}">`;
     projectString += `</div>`;
@@ -32,19 +32,9 @@ const blogDom = (blogArray) => {
     console.log(blog);
     blogString += `<div class="container">`;
     blogString += `<div class=" divider"></div>`;
-    // blogString += `<div class="card-image waves-effect waves-block waves-light">`;
-    // blogString += `</div>`;
-    // blogString += `<div class="card-content">`;
     blogString += `<h2>${blog.title}</h2>`;
     blogString += `<h5>${blog.date}</h5>`;
-    // blogString += `<i class="material-icons right">more_vert</i>`;
-    // blogString += `</span>`;
-    // blogString += `</div>`;
-    // blogString += `<div class="card-reveal">`;
-    // blogString += `<i class="material-icons right">close</i>`;
-    // blogString += `</span>`;
     blogString += `<p>${blog.post}</p>`;
-    // blogString += `</div>`;
     blogString += `</div>`;
   });
   writeToDom('#blog-container', blogString);
