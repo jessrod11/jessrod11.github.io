@@ -20,8 +20,8 @@
         },
         "project3": {
             "title": "Scripture Memory Game",
-            "imageUrl": "https://raw.githubusercontent.com/jessrod11/local-weather/master/img/fiveSearch.png",
-            "description": "The Scripture Memory Game is a React applicaton that features 8 scriptures and a Scripture reference button on page load. When the correct verse of the scripture reference button is selected, then that scripture is featured as your scripture of the week. The user has the ability to save and delete from their dashboard. Once completed, the game restarts.",
+            "imageUrl": "https://raw.githubusercontent.com/jessrod11/jessrod11.github.io/master/img/scriptureapp.png",
+            "description": "The Scripture Memory Game is a React applicaton that features eight verse and a scripture reference button on page load. When the correct verse of the scripture reference button is selected, that scripture is featured as the user's scripture of the week. The user has the ability to save and delete from their dashboard.",
             "technologiesUsed": "HTML, CSS, JS, Jquery, Boostrap, Grunt, Firebase, React ",
             "available": true,
             "url": "https://react-scriptureapp.firebaseapp.com",
