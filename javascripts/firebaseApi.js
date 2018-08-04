@@ -1,3 +1,4 @@
+const { projectDom,} = require('./dom');
 let firebaseConfig = {};
 
 const setConfig = (fbConfig) => {
@@ -26,6 +27,16 @@ const getProjects = () => {
   });
 };
 
+const printProjects = () => {
+  getProjects()
+    .then((projectsArray) => {
+      projectDom(projectsArray);
+    })
+    .catch((error) => {
+      console.log('error in getProjectPromise', error);
+    });
+};
+
 const getBlogs = () => {
   return new Promise ((resolve, reject) => {
     const allBlogsArray = [];
@@ -51,5 +62,6 @@ const getBlogs = () => {
 module.exports = {
   setConfig,
   getProjects,
+  printProjects,
   getBlogs,
 };
