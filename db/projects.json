@@ -1,7 +1,7 @@
 {
     "projects": {
         "project1": {
-            "title": "Local Weather",
+            "title": "Local Weather Application",
             "imageUrl": "https://raw.githubusercontent.com/jessrod11/local-weather/master/img/fiveSearch.png",
             "description": "This Super Mario Themed local weather applicaton allows you to search for your local weather for the current day and can search for a five day forecast by calling the Open Weather Api. Using the CURD operations you are also able to save forecasts, delete forecasts, sign into the application and mark scary forecasts with a red background. ",
             "technologiesUsed": "HTML, CSS, JS, Jquery, Browserify, Boostrap, Grunt, Ajax, and Firebase",
@@ -10,22 +10,22 @@
             "githubUrl": "https://github.com/jessrod11/local-weather"
         },
         "project2": {
-            "title": "Local Weather",
-            "imageUrl": "https://raw.githubusercontent.com/jessrod11/local-weather/master/img/fiveSearch.png",
-            "description": "This Super Mario Themed local weather applicaton allows you to search for your local weather for the current day and can search for a five day forecast by calling the Open Weather Api. Using the CURD operations you are also able to save forecasts, delete forecasts, sign into the application and mark scary forecasts with a red background. ",
-            "technologiesUsed": "HTML, CSS, JS, Jquery, Browserify, Boostrap, Grunt, Ajax, and Firebase",
+            "title": "React Mashups",
+            "imageUrl": "",
+            "description": "This React application loads all animal mashups on page load. When the user inputs new data in the form, that information is populated with all other data that was printed on the page. This class project was assigned to allow ups to practice manipulating components and practicing the CRUD operations.",
+            "technologiesUsed": "HTML, CSS, JS, Jquery, Browserify, Boostrap, Grunt, Firebase, and React",
             "available": true,
-            "url": "https://jr-localweather.firebaseapp.com/",
-            "githubUrl": "https://github.com/jessrod11/local-weather"
+            "url": "https://react-mashups.firebaseapp.com/",
+            "githubUrl": "https://github.com/jessrod11/react-mashups"
         },
         "project3": {
-            "title": "Local Weather",
+            "title": "Scripture Memory Game",
             "imageUrl": "https://raw.githubusercontent.com/jessrod11/local-weather/master/img/fiveSearch.png",
-            "description": "This Super Mario Themed local weather applicaton allows you to search for your local weather for the current day and can search for a five day forecast by calling the Open Weather Api. Using the CURD operations you are also able to save forecasts, delete forecasts, sign into the application and mark scary forecasts with a red background. ",
-            "technologiesUsed": "HTML, CSS, JS, Jquery, Browserify, Boostrap, Grunt, Ajax, and Firebase",
+            "description": "The Scripture Memory Game is a React applicaton that features 8 scriptures and a Scripture reference button on page load. When the correct verse of the scripture reference button is selected, then that scripture is featured as your scripture of the week. The user has the ability to save and delete from their dashboard. Once completed, the game restarts.",
+            "technologiesUsed": "HTML, CSS, JS, Jquery, Boostrap, Grunt, Firebase, React ",
             "available": true,
-            "url": "https://jr-localweather.firebaseapp.com/",
-            "githubUrl": "https://github.com/jessrod11/local-weather"
+            "url": "https://react-scriptureapp.firebaseapp.com",
+            "githubUrl": "https://github.com/jessrod11/capstone-app"
         }
     }
 }
