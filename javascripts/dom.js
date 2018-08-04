@@ -27,6 +27,7 @@ const blogDom = (blogArray) => {
   blogString += `<h1>My Blogs</h1>`;
   blogString += `<div class="divider"></div>`;
   blogArray.forEach((blog) => {
+    console.log(blog);
     blogString += `<div>`;
     // blogString += `<div class="card-image waves-effect waves-block waves-light">`;
     // blogString += `</div>`;
