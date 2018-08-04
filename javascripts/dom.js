@@ -8,9 +8,9 @@ const projectDom = (projectArray) => {
     projectString += `<div class="card">`;
     projectString += `<div class="card-image">`;
     projectString += `<img src= "${project.imageUrl}">`;
-    projectString += `<span class="card-title">${project.title}</span>`;
     projectString += `</div>`;
     projectString += `<div class="card-content">`;
+    projectString += `<h1 class="card-title">${project.title}</h1>`;
     projectString += `<p>${project.description}</p>`;
     projectString += ` <div class="card-action">`;
     projectString += `<a href="${project.githubUrl}" target="_blank" class="btn btn-primary" role="button">Github</a> <a href="${project.url}" class="btn btn-default" target="_blank" role="button">Project</a>`;
