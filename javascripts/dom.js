@@ -24,16 +24,19 @@ const projectDom = (projectArray) => {
 
 const blogDom = (blogArray) => {
   let blogString = '';
-  blogString += `<h1>My Blogs</h1>`;
+  blogString += `<div class="container">`;
+  blogString += `<h1 class="center">My Blogs</h1>`;
   blogString += `<div class="divider"></div>`;
+  blogString += `</div>`;
   blogArray.forEach((blog) => {
     console.log(blog);
-    blogString += `<div>`;
+    blogString += `<div class="container">`;
+    blogString += `<div class=" divider"></div>`;
     // blogString += `<div class="card-image waves-effect waves-block waves-light">`;
     // blogString += `</div>`;
     // blogString += `<div class="card-content">`;
-    blogString += `<p>${blog.date}</p>`;
-    blogString += `<p>${blog.title}</p>`;
+    blogString += `<h2>${blog.title}</h2>`;
+    blogString += `<h5>${blog.date}</h5>`;
     // blogString += `<i class="material-icons right">more_vert</i>`;
     // blogString += `</span>`;
     // blogString += `</div>`;

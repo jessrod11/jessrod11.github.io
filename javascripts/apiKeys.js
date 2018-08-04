@@ -1,4 +1,5 @@
 const {setConfig,} = require('./firebaseApi');
+const {getProjectsEvent, getBlogsEvent,} = require('./events');
 
 const apiKeys = () => {
   return new Promise ((resolve, reject) => {
@@ -17,6 +18,8 @@ const retrieveKeys = () => {
     .then((results) => {
       setConfig(results);
       firebase.initializeApp(results.firebase);
+      getProjectsEvent();
+      getBlogsEvent();
     })
     .catch((err) => {
       console.error('error while trying to retrieve keys', err);

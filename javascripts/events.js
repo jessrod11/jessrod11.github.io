@@ -14,35 +14,31 @@ const materalizeInit = () => {
 };
 
 const getProjectsEvent = () => {
-  $(document).on('click', '#projectsLink', (e) => {
-    getProjects()
-      .then((projectsArray) => {
-        projectDom(projectsArray);
-      })
-      .catch((error) => {
-        console.log('error in getProjectPromise', error);
-      });
-  });
+  getProjects()
+    .then((projectsArray) => {
+      projectDom(projectsArray);
+    })
+    .catch((error) => {
+      console.log('error in getProjectPromise', error);
+    });
 };
 
 const getBlogsEvent = () => {
-  $(document).on('click', '.blogLinks', (e) => {
-    getBlogs()
-      .then((blogsArray) => {
-        blogDom(blogsArray);
-      })
-      .catch((error) => {
-        console.log('error in getBlogsPromise', error);
-      });
-  });
+  getBlogs()
+    .then((blogsArray) => {
+      blogDom(blogsArray);
+    })
+    .catch((error) => {
+      console.log('error in getBlogsPromise', error);
+    });
 };
 
 const eventsInit = () => {
   materalizeInit();
-  getProjectsEvent();
-  getBlogsEvent();
 };
 
 module.exports = {
   eventsInit,
+  getProjectsEvent,
+  getBlogsEvent,
 };
