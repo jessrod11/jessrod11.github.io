@@ -6,10 +6,7 @@ const materalizeInit = () => {
     $('.sidenav').sidenav();
     $('.parallax').parallax();
     $('.scrollspy').scrollSpy();
-    $('.carousel.carousel-slider').carousel({
-      fullWidth: true,
-    });
-
+    $('.slider').slider();
   });
 };
 
