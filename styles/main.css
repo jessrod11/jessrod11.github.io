@@ -58,9 +58,16 @@ nav .brand-logo {
 }
 
 
-.footer-styles {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 67%;
+.footer-styles ul {
+    display: block;
+    text-align: center;
+   list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.footer-styles  li {
+    display: inline;
+    margin: 115px;
 }
 
