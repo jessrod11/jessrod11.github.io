@@ -13,13 +13,16 @@
     height: 800px;
 }
 
-img {
+.tech-img, img.responsive-img, video.responsive-video {
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    max-width: 64%;
     height: auto;
-    max-width: 100%;
-}
-
-.tech-img {
-    height: 92px;
 }
     /*******************Bio Styling**********************/
 .bio-styles{
